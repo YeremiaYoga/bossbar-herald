@@ -1,0 +1,16 @@
+{
+  "name": "test-bossbar",
+  "title": "Test Bossbar",
+  "description": "Herald Beta Testing",
+  "version": "1.0.0",
+  "author": "test",
+  "manifest": "",
+  "download": "",
+  "scripts": ["scripts/main.js"],
+  "styles": ["styles/style.css"],
+  "persistentStorage": true,
+  "dependencies": [],
+  "languages": [],
+  "packs": [],
+  "compatibleCoreVersion": "10.*"
+}

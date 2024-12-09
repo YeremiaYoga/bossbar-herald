@@ -1,0 +1,227 @@
+.hp-bar-container {
+    position: fixed;
+    top: 120px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 50%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app.window-app.sheet {
+    z-index: 100;
+}
+
+.token-name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.hpdanbar {
+    margin-top: 5px;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+}
+
+.token-container {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.token-image {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 0 0 10px 5px #ff7f00;
+    transition: box-shadow 0.3s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    -webkit-transform: translate(-30%, -50%);
+    -moz-transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    -o-transform: translate(-30%, -50%);
+}
+
+.ornamen-icon {
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    background-image: url('/modules/test-bossbar/assets/ornamen_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+
+
+.bghp-bar {
+    width: 10%;
+    flex-grow: 1;
+    height: 100%;
+    background-color: #ffb8b3;
+    transition: width 1s ease-in-out;
+}
+
+.hp-bar {
+    width: 10%;
+    flex-grow: 1;
+    height: 100%;
+    background-image: url('/modules/test-bossbar/assets/hp.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: width 500ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -ms-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+}
+
+
+.bgtemphp-bar {
+    width: 10%;
+    flex-grow: 1;
+    height: 100%;
+    background-color: #b3e3ff;
+    transition: width 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.temphp-bar {
+    width: 10%;
+    flex-grow: 1;
+    height: 100%;
+    background-image: url('/modules/test-bossbar/assets/temporary_hp.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: width 500ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.hpbg {
+    flex-grow: 1;
+    height: 100%;
+    background-image: url('/modules/test-bossbar/assets/background_hp.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    transform: skewX(-40deg);
+    -webkit-transform: skewX(-40deg);
+    -moz-transform: skewX(-40deg);
+    -ms-transform: skewX(-40deg);
+    -o-transform: skewX(-40deg);
+}
+
+
+
+.mystic-action {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: inline-block;
+
+}
+
+.token-effect {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background-image: url('/modules/test-bossbar/assets/ornamen_kiri.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background-image: url('/modules/test-bossbar/assets/ornamen_kanan.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.uphp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legact-container {
+    margin-right: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.legact-effect {
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.underHp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.effects-container {
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.legres-container {
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.legres-effect {
+    border: none;
+    width: 30px;
+    height: 30px;
+}
